@@ -17,7 +17,7 @@
 
 # Que les dieux de l'algorithmie vous accompagnent.
 
-print("C'est parti !");
+print("C'est parti !")
 
 ################################################################################
 test: bool = True
