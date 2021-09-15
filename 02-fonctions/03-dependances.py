@@ -4,7 +4,7 @@
 # fera une petite chose pouvant être appelée dès que nécessaire.
 
 # Vous pouvez voir ci-dessous que la fonction get_square_description fait appel
-# à la fonction get_square_perimeter pour récupérer le périmètre du carré.
+# à la fonction get_square_surface pour récupérer la surface du carré.
 
 # Créez une fonction get_square_volume prenant un paramètre "size".
 # Le volume étant la surface multipliée par la hauteur, utilisez la fonction
