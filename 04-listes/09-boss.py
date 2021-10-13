@@ -58,4 +58,4 @@
 
 
 
-print('\033[92m✓ OK' if compute_notes([10, 12, 8], 3) == [] and compute_notes([10, 8, 9, 15, 0], 4) == [10, 8, 9, 15, 0, 8] and compute_notes([0, 10, 8], 1) == [0, 8, 10, 8] and compute_notes([0, 0], 1) == [0, 0] and compute_notes([0, 0, 3], 2) == [0, 0, 3, 3] else '\033[91m❌KO')
+print('\033[92m✓ OK' if compute_notes([10, 12, 8], 3) == [] and compute_notes([10, 8, 9, 15, 0], 4) == [10, 8, 9, 15, 0, 15] and compute_notes([0, 10, 8], 1) == [0, 10, 10, 8] and compute_notes([0, 0], 1) == [0, 0] and compute_notes([0, 0, 3], 2) == [0, 0, 3, 3] else '\033[91m❌KO')
