@@ -3,7 +3,7 @@
 
 # Exemple : [1, 2, 3, 4, 5, 6, 7, 8, 9][1:6:3]
 # Tous les éléments entre l'index 1 (inclus) et 6 (non-inclus), avec un écart de
-# 2 entre chaque. Ce qui donne [2, 5]
+# 3 entre chaque. Ce qui donne [2, 5]
 
 # En utilisant le tableau "months", créez un tableau "even_months" qui stocke
 # tout les mois pairs ("Feb", "Apr", "May"...)
