@@ -11,8 +11,8 @@
 # semestre ne contenant que des zéros.
 
 # Si un des deux semestres ne contient pas d'autre note que des zéros, on 
-# rajoute à ce semestre une unique note : la plus basse (sans compter les
-# zéros !) de l'autre semestre. On renvoit ensuite le tableau des notes modifié.
+# rajoute à ce semestre une unique note : la plus haute de l'autre semestre.
+# On renvoit ensuite le tableau des notes modifié.
 
 # Si aucun des deux semestres n'est concerné, on retourne le tableau sans 
 # modification.
