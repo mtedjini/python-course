@@ -9,7 +9,9 @@
 # 13 % 4 = 1 (il y a un reste : 13 n'est pas divisible par 4)
 
 ################################################################################
-
+def is_leap_year(year: int) -> bool:
+    leap_year = ((year%400==0) or (year%4 == 0 and year%100 !=0))
+    return leap_year 
 ################################################################################
 
 print(is_leap_year(2021))

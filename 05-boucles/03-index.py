@@ -10,6 +10,11 @@
 
 ################################################################################
 numbers: list[int] = [2, 5, 7, 9, 55, 98, 120, 152, 154, 120, 177, 497, 10598]
+
+for index, number_in_list in enumerate(numbers) :
+    if index < len(numbers)-1 and numbers[index + 1] < numbers[index] :
+        numbers.pop(index + 1)
+
 ################################################################################
 
 

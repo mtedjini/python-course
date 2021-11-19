@@ -15,6 +15,15 @@
 ################################################################################
 milliseconds_per_seconds: int = 1000
 milliseconds_per_minutes: int = milliseconds_per_seconds * 60
+
+milliseconds_per_hour: int = milliseconds_per_minutes * 60
+milliseconds_per_day: int = milliseconds_per_hour * 24
+
+print(milliseconds_per_seconds)
+print(milliseconds_per_minutes)
+print(milliseconds_per_hour)
+print(milliseconds_per_day)
+
 ################################################################################
 
 

@@ -19,8 +19,15 @@
 def get_square_surface(size: float) -> float:
     return size * size
 
+def get_square_volume(size: float) -> float:
+    return get_square_surface(size) * size
+
 def get_square_description(size: float) -> str:
-    return "Voici un carré de " + str(get_square_surface(size)) + "cm2 de surface"
+    return "Voici un carré de " + str(get_square_surface(size)) + "cm2 de surface et de " + str(get_square_volume(size)) + "cm3 de volume"
+
+
+
+
 ################################################################################
 
 print(get_square_description(4))

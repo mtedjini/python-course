@@ -16,7 +16,12 @@
 # Exemple : la factorielle de 4 est 1*2*3*4 = 24
 
 ################################################################################
-
+def factorial(number : int) -> int :
+    factorielle = 1
+    for i in range(1, number+1) :
+        factorielle = factorielle * i
+    return (factorielle)
+    
 ################################################################################
 
 

@@ -14,6 +14,11 @@
 ################################################################################
 first_visit: bool = True
 
+def get_rectangle_surface(width, height):
+    if width == height:
+        print("C'est un carré !")
+    return width * height
+    
 if first_visit:
     print('Welcome !')
 ################################################################################

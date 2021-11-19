@@ -10,6 +10,10 @@
 ################################################################################
 def is_centenary(age: int) -> bool:
     return age >= 100
+
+def can_drink(country, age) -> bool:
+    can_drink = ((country == "France" and age >=18) or (country == "USA" and age >=21))
+    return can_drink
 ################################################################################
 
 

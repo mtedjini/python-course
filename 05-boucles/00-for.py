@@ -9,6 +9,13 @@
 
 ################################################################################
 notes: list[int] = [10, 15, 12, 8, 7]
+
+somme: float = 0
+
+for each_notes in notes :
+    somme += each_notes
+
+average: float = somme/len(notes)
 ################################################################################
 
 # Note : si vous connaissez déjà python, vous savez peut-être qu'il existe des

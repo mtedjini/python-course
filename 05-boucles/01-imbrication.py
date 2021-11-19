@@ -30,6 +30,18 @@ notes = [
     [15, 18, 4, 14],
     [9, 9, 12, 15]
 ]
+averages: list[float] = []
+somme: float = 0
+
+for i in range(len(notes)):
+    for j in notes[i] :
+        somme += j
+    average_for_each = somme/len(notes[i])
+    averages.append(average_for_each)
+    somme = 0
+        
+print(averages)
+
 ################################################################################
 
 

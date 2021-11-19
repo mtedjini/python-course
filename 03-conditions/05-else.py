@@ -10,6 +10,12 @@ def get_age_range(age: int) -> str:
         return "Adult"
     else:
         return "Minor"
+
+def get_max(x, y):
+    if (x>y):
+        return x
+    else :
+        return y
 ################################################################################
 
 

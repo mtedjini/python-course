@@ -10,6 +10,14 @@
 # suite de Fibonacci (ou 0 si aucun ne correspond).
 
 ################################################################################
+def find_in_fibonacci_suite(targets: list[int]):
+    for target in targets :
+        fibonacci: list[int] = [0, 1]
+        while fibonacci[-1] < target:
+            fibonacci.append(fibonacci[-2] + fibonacci[-1])
+        if fibonacci[-1] == target :
+            return target
+    return 0
 
 ################################################################################
 

@@ -8,6 +8,8 @@
 
 ################################################################################
 sky_is_blue: bool = True
+water_is_green = False
+fire_is_hot = True
 ################################################################################
 
 # On fera attention à nommer nos boolens comme des affirmations pour fluidifier

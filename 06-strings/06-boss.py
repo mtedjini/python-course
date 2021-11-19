@@ -11,7 +11,23 @@
 # La fonction doit renvoyer un booléen.
 
 ################################################################################
-
+def is_valid_password(password : str) -> bool :
+    if(len(password) < 6) :
+        return False
+    numbers_count : int = 0
+    has_lower_case : bool = False
+    has_upper_case : bool = False
+    for char in password :
+        if(char.isnumeric()):
+            numbers_count += 1
+        elif(char.islower()):
+            has_lower_case = True
+        elif(char.isupper()):
+            has_upper_case = True
+        else:
+            return False
+    
+    return (numbers_count >= 2 and has_lower_case and has_upper_case)
 ################################################################################
 
 # Pour simplifier vos test, utilisez input() et "while True" afin de pouvoir

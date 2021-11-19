@@ -13,6 +13,12 @@
 ################################################################################
 def multiple(a: float, b: float) -> float:
     return a * b
+
+def get_rectangle_perimeter(width: float, height: float) -> float:
+    return 2* (width + height)
+
+def get_square_perimeter(size: float) -> float:
+    return get_rectangle_perimeter(size, size) 
 ################################################################################
 
 print(multiple(3, 3.5))

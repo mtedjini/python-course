@@ -14,6 +14,13 @@ def multiple(a: float, b: float) -> float:
     return a * b
 
 result: float = multiple(6, 8)
+
+def get_square(square: float):
+    return square * square
+
+square: float = get_square(8)
+
+double_square: float = get_square(square) 
 ################################################################################
 
 print("square :", square)

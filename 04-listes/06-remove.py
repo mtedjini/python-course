@@ -10,6 +10,8 @@
 
 ################################################################################
 voyels: list[str] = ['A', 'E', 'X', 'I', 'O', 'X', 'U', 'Y']
+
+while "X" in voyels : voyels.remove("X")
 ################################################################################
 
 # Non, il n'existe pas de méthode removeAll() en python... (mais d'autres 

@@ -6,6 +6,8 @@
 ################################################################################
 jane_notes = [14, 8, 19, 8, 15]
 john_notes = [8, 4, 20, 17, 8]
+
+max_note = max(jane_notes + john_notes)
 ################################################################################
 
 # Vous pouvez utilisez deux variables intermédiaires, mais il est possible de 

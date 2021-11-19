@@ -10,6 +10,8 @@
 
 ################################################################################
 months: list[str] = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+even_months = months[1 : : 2]
 ################################################################################
 
 # Conseil : Passez vous des paramètres optionnel. Seuls deux chiffres sont ici

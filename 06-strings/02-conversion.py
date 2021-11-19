@@ -14,7 +14,16 @@
 # Pas de validation automatique pour cet exercice.
 
 ################################################################################
+print("Quel est votre âge ?")
+age = input()
 
+if age.isnumeric() :
+    if int(age) >= 18:
+        print("Majeur") 
+    else :
+        print("Mineur") 
+else :
+    print("le programme s'arrête")
 ################################################################################
 
 # Astuce : vous pouvez utiliser un ternaire pour afficher "Mineur" ou "Majeur"
