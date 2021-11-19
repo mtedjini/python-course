@@ -30,7 +30,11 @@ available_ingredients: list[Ingredient] = [
 ################################################################################
 
 def get_cost_for_order(pizzas: list[Pizza]) -> int:
-    return 0
+  total_cost: int = 0
+  for pizza in pizzas:
+    for ingredient in pizza["ingredients"]:
+      total_cost += ingredient["cost"] * pizza["quantity"]
+  return total_cost
 
 ################################################################################
 

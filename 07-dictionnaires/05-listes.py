@@ -13,7 +13,26 @@ class Student(TypedDict):
     notes: list[int]
 
 ################################################################################
+student1 : Student = {
+    "firstname": "",
+    "lastname": "",
+    "notes": [0,1,2,3],
+}
+student2 : Student = {
+    "firstname": "",
+    "lastname": "",
+    "notes": [0,1,2,3],
+}
+student3 : Student = {
+    "firstname": "",
+    "lastname": "",
+    "notes": [0,1,2,3],
+}
 
+students : list[Student] = []
+students.append(student1)
+students.append(student2)
+students.append(student3)
 ################################################################################
 
 

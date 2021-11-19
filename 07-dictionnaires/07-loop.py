@@ -25,7 +25,13 @@ notes: Notes = {
 }
 
 ################################################################################
-best_course: str = ''
+best_note: int = 0
+best_course: str = ""
+
+for eachnotes in notes.keys():
+    if notes[eachnotes] >= best_note:
+        best_note = notes[eachnotes]
+        best_course = eachnotes
 ################################################################################
 
 

@@ -20,7 +20,18 @@ album: Album = {
 }
 
 ################################################################################
+class Book(TypedDict):
+    author: str
+    title: str
+    year: int
+    read: bool
 
+book: Book = {
+    "author": "15",
+    "title": "True",
+    "year": 1987,
+    "read": True
+}
 ################################################################################
 
 # Pas de validation automatique pour cet exercice.
