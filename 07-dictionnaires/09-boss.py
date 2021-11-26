@@ -99,7 +99,7 @@ get_cost_for_order(order)
 
 
 
-order1 = [
+order1: list[Pizza] = [
   {
     "quantity": 2,
     "ingredients": [available_ingredients[0], available_ingredients[1], available_ingredients[2]]
@@ -109,7 +109,7 @@ order1 = [
     "ingredients": [available_ingredients[0], available_ingredients[2], available_ingredients[4]]
   }
 ]
-order2 = [
+order2: list[Pizza] = [
   {
     "quantity": 5,
     "ingredients": [available_ingredients[0], available_ingredients[1], available_ingredients[2], available_ingredients[3], available_ingredients[4]]
