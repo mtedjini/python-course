@@ -15,7 +15,7 @@ if (match):
 
 ################################################################################
 def ends_with(target: str, sample: str) -> bool:
-    return True
+    return bool(re.search(target+"$", sample))
 ################################################################################
 
 # Info : remplacez re.search() par re.match() pour demander automatiquement
