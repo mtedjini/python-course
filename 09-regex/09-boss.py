@@ -15,7 +15,11 @@
 import re
 
 def is_valid_mail(mail: str) -> bool:
-    return bool(re.search('^([a-z0-9])(\.*?[a-z0-9])*?\@([a-z0-9]){3,}(\.*?[a-z0-9])*?\.([a-z]){2,3}$', mail))
+    
+    return bool(re.search('^(([a-z0-9]+)([a-z0-9\.]+))([a-z0-9]+)\@([a-z0-9]){3,}(\.*?[a-z0-9])*?\.([a-z]){2,3}$', mail))
+
+#Correction :
+# ^[a-z0-9]+[a-z0-9\.]+[a-z0-9]+@[a-z0-9]+[a-z0-9\.]+[a-z0-9]+\.([a-z]){2,3}$
 ################################################################################
 
 # Tous les mails suivants sont valides : 
@@ -31,6 +35,8 @@ valid: list[str] = [
 # Tous les mails suivant sont invalides :
 
 invalid: list[str] = [
+    "jj@mail.com",
+    "j@mail.com",
     ".john.doe@mail.com",
     ".john.doe.@mail.com",
     "john.doe@.mail.com",
