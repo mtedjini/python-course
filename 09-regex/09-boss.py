@@ -15,11 +15,14 @@
 import re
 
 def is_valid_mail(mail: str) -> bool:
-    
+    #My regex
     return bool(re.search('^(([a-z0-9]+)([a-z0-9\.]+))([a-z0-9]+)\@([a-z0-9]){3,}(\.*?[a-z0-9])*?\.([a-z]){2,3}$', mail))
 
 #Correction :
 # ^[a-z0-9]+[a-z0-9\.]+[a-z0-9]+@[a-z0-9]+[a-z0-9\.]+[a-z0-9]+\.([a-z]){2,3}$
+
+#Not working on python
+# ^(?&text)@(?'text'[a-z0-9][a-z0-9\.]+[a-z0-9])\.[a-z]{2,3}$
 ################################################################################
 
 # Tous les mails suivants sont valides : 
